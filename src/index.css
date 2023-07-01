@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&family=Roboto+Mono:wght@300&display=swap');
+
+:root {
+    --dkblue: #212A3E; 
+    --dark: #27374D;
+    --dkgray: #526D82;
+    --gray: #9DB2BF;
+    --white: #DDE6ED;
+    --mono: 'Oxygen Mono', monospace;
+    --sans: 'Oxygen', sans-serif;
+    --roboto: 'Roboto Mono', monospace;
+    --font-size: 1.5rem;
+
+    --lightpurple: #6554AF;
+    --dkpurple: #9575DE;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--sans);
+    font-size: var(--font-size);
+    color: var(--gray);
+    background-color: var(--dark);
+    width: 100vw;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem;
+    margin: 0 20px;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    color: var(--gray);
+}
+
+nav a:hover {
+    color:var(--white);
+}
+
+/* gradient */
+.gradient {
+    background: linear-gradient(90deg, rgba(82,109,130,1) 0%, rgba(221,230,237,1) 100%);
+    height: 2px;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* content */
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+/* widget */
+
+.widget {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 40vw;
+    background-color: var(--dkblue);
+    border-radius: 20px;
+    color: var(--white);
+    font-size: 1.2rem;
+}
+
+
+.home-link {
+    text-decoration: none;
+}
+
+/* options */
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+/* Footer */
+footer {
+    width: 100vw;
+    background-color: var(--dkblue);
+    text-align: center;
+    margin-top: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Media Queries */
+
+@media (min-width: 850px) {
+
+    nav li:first-child {
+        flex-basis: auto;
+        text-align: left;
+        margin-right: auto; 
+    }
+}
+
+@media (max-width: 550px) {
+    .post {
+        flex-basis: 100%;
+    } 
+}
