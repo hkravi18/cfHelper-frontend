@@ -25,28 +25,28 @@ function App() {
       <Nav />
       <div className='gradient'></div>
       <div className='outlet'>
-        <DataProvider>
-          <Routes>
-             <Route index element={<Home />}/>
-             <Route path="/addUserList" element={<AddUserList />}/>
-             <Route path="/removeUserList" element={<RemoveUserList />}/>
-             <Route path="/removeAllUserList" element={<RemoveAllUserList />}/>
-             <Route path="/showUserList" element={<ShowUserList />}/>
-             <Route path="/updateUserList" element={<UpdateUserList />}/>
+      <DataProvider>
+      <Routes>
+          <Route index element={<Home />}/>
+          <Route path="/addUserList" element={<AddUserList />}/>
+          <Route path="/removeUserList" element={<RemoveUserList />}/>
+          <Route path="/removeAllUserList" element={<RemoveAllUserList />}/>
+          <Route path="/showUserList" element={<ShowUserList />}/>
+          <Route path="/updateUserList" element={<UpdateUserList />}/>
 
-             <Route path="/showUpcomingContest" element={<ShowUpcomingContest />}/>
-             <Route path="/showPastContest" element={<ShowPastContest />}/>
-             <Route path="/showUserSubmission" element={<ShowUserSubmission />}/>
-             <Route path="/showUserRatingChange" element={<ShowUserRatingChange />}/>
-             <Route path="/showUserInfo" element={<ShowUserInfo />}/>
+          <Route path="/showUpcomingContest" element={<ShowUpcomingContest />}/>
+          <Route path="/showPastContest" element={<ShowPastContest />}/>
+          <Route path="/showUserSubmission" element={<ShowUserSubmission />}/>
+          <Route path="/showUserRatingChange" element={<ShowUserRatingChange />}/>
+          <Route path="/showUserInfo" element={<ShowUserInfo />}/>
 
-             <Route path="/about" element={<About />}/>
-             <Route path="/contact" element={<Contact />}/>
-          </Routes>
+          <Route path="/about" element={<About />}/>
+          <Route path="/contact" element={<Contact />}/>
+        </Routes>
         </DataProvider>
-     </div>
-     <Footer />
-   </div>
+      </div>
+      <Footer />
+    </div>
   );
 }
 
