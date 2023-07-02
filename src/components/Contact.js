@@ -6,7 +6,7 @@ const Contact = () => {
     <Container>
        <div>
             <p>Don't be a Stranger.</p>
-            <h1>Contact Me.</h1>
+            <h1 style={{ color: "#9575DE" }}>Contact Me.</h1>
        </div>
        <div className="box">
            <div>
