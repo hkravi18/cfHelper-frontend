@@ -42,7 +42,7 @@ const ShowUserInfo = () => {
                     <form onSubmit={(e) => handleSubmit(e)}>
                         <label htmlFor='username'>Enter User Name</label>
                         <input type='text' name="username" placeholder='enter user name' value={userName} onChange={e => setUserName(e.target.value)}/>
-                        <button type='submit'>Add</button>
+                        <button type='submit'>Submit</button>
                     </form>
                 </Container1>
             )
